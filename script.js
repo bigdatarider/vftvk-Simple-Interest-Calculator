@@ -3,7 +3,10 @@ function compute()
     var principal = document.getElementById("principal").value;
     //Check if principal amount is valid
     if(principal<=0) {
-        alert("Enter a positive number"); document.getElementById("principal").focus(); return;
+        alert("Enter a positive number"); 
+        document.getElementById("principal").value="";
+        document.getElementById("principal").focus(); 
+        return;
     }
     var rate = document.getElementById("rate").value;
     var years = document.getElementById("years").value;
